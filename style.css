@@ -1,6 +1,7 @@
 * {
 	padding: 0px;
-	margin: 0px;
+	margin: 0px; 
+	font-family: 'Roboto Slab', serif;
 }
 body {
 	display: flex;
@@ -24,6 +25,17 @@ a:visited {
 	color: inherit;
 }
 
+a:hover {
+	color: #3882F6;
+	transition: 0.5s;
+}
+
+button:hover {
+	background-color: #E5E7EB;
+	color: #3882F6;
+	transition: 0.5s;
+}
+
 h1,
 h2,
 h3,
@@ -36,7 +48,7 @@ p {
 .header {
 	font-size: 24px;
 	color: #F9FAF8;
-	padding-left: 96px;
+	padding-left: 240px;
 }
 
 .header-container {
@@ -49,21 +61,22 @@ p {
 
 .header-container .links {
 	display: flex;
-	padding-right: 96px;
-	gap: 16px;
+	padding-right: 240px;
+	gap: 24px;
 }
 
 .content-container {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	background-color: #1F2937;
+	padding: 64px 0px;
 }
 
 .content-text {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding-left: 96px;
+	padding-left: 240px;
 }
 
 .content-text h2 {
@@ -75,21 +88,24 @@ p {
 .content-text p {
 	font-size: 18px;
 	color: #E5E7EB;
-	padding: 12px 0px;
+	padding: 24px 0px;
 }
 
 .sign-up {
 	background-color: #3882F6;
+	box-sizing: content-box;
 	width: 96px;
-	border: 1px solid #E5E7EB;
+	height: 36px;
+	border: 2px solid #E5E7EB;
 	border-radius: 5px;
 	padding: 4px 16px;
 	color: #E5E7EB;
+	flex-shrink: 0;
 }
 
 img {
 	width: 300px;
-	padding: 96px;
+	padding-right: 240px;
 }
 
 .info-container {
@@ -108,7 +124,7 @@ img {
 .info-item {
 	display: flex;
 	padding: 24px 0px 48px 0px;
-	gap: 24px;
+	gap: 48px;
 }
 
 .info-box {
@@ -118,38 +134,54 @@ img {
 	max-width: 150px;
 }
 
+.info-box p {
+	text-align: center;
+}
+
 .box {
-	border: 3px solid #3882F6;
+	border: 4px solid #3882F6;
 	border-radius: 8px;
-	width: 120px;
-	height: 120px;
+	width: 140px;
+	height: 140px;
 }
 
 .quote {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-direction: column;
 	background-color: #E5E7EB;
-	padding: 96px 192px 96px 192px;
+	padding: 120px 240px 120px 240px;
 }
 
-.quote p {
+.quote .text {
 	font-size: 36px;
 	color: #1F2937;
 	font-style: italic;
+}
+
+.quote .author {
+	align-self: flex-end;
+	padding-right: 96px;
+	font-size: 24px;
+	color: #1F2937;
+	font-weight: 200;
 }
 
 .action {
 	display: flex;
 	justify-content: space-around;
 	background-color: #3882F6;
-	padding: 32px 48px 32px 48px;
-	margin: 96px;
-	border-radius: 5px;
+	margin: 96px 192px;
+	padding: 48px;
+	border-radius: 8px;
 }
 
-.action div {
+.action .action-text {
 	color: #F9FAF8;
+}
+
+.action-text h4 {
+	font-size: 24px;
+	font-weight: 900;
 }
 
 .footer {
