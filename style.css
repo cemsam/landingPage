@@ -1,0 +1,165 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+
+ul {
+	margin: 0px;
+}
+
+li {
+	list-style: none;
+	color: #E5E7EB;
+	font-size: 18px;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	padding: 0px;
+	margin: 0px;
+}
+
+.header {
+	font-size: 24px;
+	color: #F9FAF8;
+	padding-left: 96px;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #1F2937;
+	height: 64px;
+}
+
+.header-container .links {
+	display: flex;
+	padding-right: 96px;
+	gap: 16px;
+}
+
+.content-container {
+	display: flex;
+	justify-content: space-around;
+	background-color: #1F2937;
+}
+
+.content-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 96px;
+}
+
+.content-text h2 {
+	font-size: 48px;
+	color: #F9FAF8;
+	font-weight: 800;
+}
+
+.content-text p {
+	font-size: 18px;
+	color: #E5E7EB;
+	padding: 12px 0px;
+}
+
+.sign-up {
+	background-color: #3882F6;
+	width: 96px;
+	border: 1px solid #E5E7EB;
+	border-radius: 5px;
+	padding: 4px 16px;
+	color: #E5E7EB;
+}
+
+img {
+	width: 300px;
+	padding: 96px;
+}
+
+.info-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 24px;
+}
+
+.info-container h3 {
+	font-size: 36px;
+	font-weight: 800;
+	color: #1F2937;
+}
+
+.info-item {
+	display: flex;
+	padding: 24px 0px 48px 0px;
+	gap: 24px;
+}
+
+.info-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 150px;
+}
+
+.box {
+	border: 3px solid #3882F6;
+	border-radius: 8px;
+	width: 120px;
+	height: 120px;
+}
+
+.quote {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #E5E7EB;
+	padding: 96px 192px 96px 192px;
+}
+
+.quote p {
+	font-size: 36px;
+	color: #1F2937;
+	font-style: italic;
+}
+
+.action {
+	display: flex;
+	justify-content: space-around;
+	background-color: #3882F6;
+	padding: 32px 48px 32px 48px;
+	margin: 96px;
+	border-radius: 5px;
+}
+
+.action div {
+	color: #F9FAF8;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #1F2937;
+	height: 96px;
+}
+
+.footer p {
+	color: #E5E7EB;
+}
